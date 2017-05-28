@@ -1,0 +1,16 @@
+1. What is RDD?
+	RDDs are a primary abstraction in Spark. They are an immutable and fault tolerant collection of objects distributed 
+	across nodes in a cluster and data operations are performed in them. There are two types of RDD opeations namely transformations and actions.
+
+2. Define Partitions.
+	The main abstraction in Spark is the Resilient Distributed Dataset (RDD).Under the hood, these objects are stored in partitions. 
+	When performing computations on RDDs, these partitions can be operated on in parallel.
+	
+3. What operations does RDD support?
+	RDD supports two operations Transformations and actions
+4. What do you understand by Transformations in Spark?
+	Transformations are lazy operations on a RDD that create one or many new RDDs, e.g. map , filter , reduceByKey , join , cogroup , randomSplit.
+    In other words, transformations are functions that take a RDD as the input and produce one or many RDDs as the output.
+5. Define Actions
+	Actions are RDD operations that produce non-RDD values. They materialize a value in a Spark program. 
+	In other words, a RDD operation that returns a value of any type but RDD[T] is an action.
